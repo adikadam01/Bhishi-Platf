@@ -14,6 +14,7 @@ public class CreateGroupRequest {
     @Size(max = 300, message = "Description max 300 characters")
     private String description;
 
+
     @NotNull(message = "Total amount is required")
     @Min(value = 1000, message = "Minimum total amount is ₹1000")
     private Double totalAmount;
